@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finanças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <section class="principal">
+       <div class="wrapper">
+           <section class="bloco">
+               <h1>Entradas</h1>
+               <div>
+                    <p><input type="number" name="entrada" id="entrada">
+                    <input type="button" value="Adicionar" onclick="add1()">
+                    </p>
+                    <p><select name="selentrada" id="selentrada" size="5"></select></p>
+                </div>
+                <div id="res1"></div>
+           </section>
+
+           <section class="bloco">
+               <h1>Saídas</h1>
+               <div>
+                    <p><input type="number" name="saida" id="saida">
+                    <input type="button" value="Adicionar" onclick="add2()">
+                    </p>
+                    <p><select name="selsaida" id="selsaida" size="5"></select></p>
+                </div>
+                <div id="res2"></div>
+           </section>
+       </div> 
+    </section>
+    
+    <section id="res">
+        <div><input type="button" value="Finalizar" onclick="finalizar()"></div>
+        <div id="res"></div> <!--Aqui vai aparecer o total, a soma de tudo, ou a dívida-->
+        <p>&copy;Maiara</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
